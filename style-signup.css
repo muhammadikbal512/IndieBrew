@@ -1,0 +1,147 @@
+html,
+body {
+  box-sizing: border-box;
+  font-family: DM Sans, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1% 2%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.text-gray {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-singup > a {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.btn-sub {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 0;
+  background: rgb(32, 32, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 32, 176, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-sub > span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+section {
+    display: flex;
+    padding: 2rem 0;
+    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content {
+    flex-basis: 60%;
+}
+
+.left-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.left-content > p > span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.right-content {
+    background-color: #d1d4db;
+    width: 100%;
+    border-radius: 10px;
+    flex-basis: 60%;
+}
+
+.forms {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.text-field {
+    padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-field label {
+    text-align: left;
+}
+
+.text-field input {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.8rem;
+}
+
+.agreement-field {
+    display: flex;
+    align-items: center;
+}
+
+.agreement-field > p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.agreement-field > p > span {
+    color: purple;
+}
+
+form > h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .nav-menu-singup > a > span {
+        display: none;
+        padding-right: 1rem;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
